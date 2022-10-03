@@ -218,7 +218,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 8.125rem;
+        gap: 6.125rem;
+    }
+    #titulo__historia__mobile{
+        display: none;
     }
     .container__descricao__info__historia{
         display: flex;
