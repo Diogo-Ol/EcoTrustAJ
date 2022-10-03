@@ -100,13 +100,22 @@
         }
     }
     .titulo__conteudo__agenda{
-        width: 21.75rem;
+        width: auto;
 
         font-family: var(--inter);
         font-size: var(--font-30);
         font-weight: var(--semi-bold);
         line-height: var(--line-40);
         color: var(--black);
+    }
+    .descricao__conteudo__agenda{
+        font-family: var(--inter);
+        font-size: var(--font-16);
+        font-weight: var(--regular);
+        line-height: var(--line-25);
+        color: #999999;
+
+        margin: 0%;
     }
     .imagem__agenda__data{
         width: 31.313rem;

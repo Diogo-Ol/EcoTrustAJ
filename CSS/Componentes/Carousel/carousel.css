@@ -204,6 +204,10 @@
     }
     .lista__depoimentos{
         width: 340vw;
+        scroll-snap-type: x mandatory;
+    }
+    .lista__depoimentos > li {
+        scroll-snap-align: start;
     }
     .item__lista__depoimentos{
         width: 85vw;
@@ -211,7 +215,6 @@
         flex-direction: column;
         text-align: center;
         scroll-snap-align: start;
-        scroll-snap-type: y mandatory;
     }
     .secao__conteudo__lista__depoimentos{
         text-align: center;
