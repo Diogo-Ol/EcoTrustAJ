@@ -317,6 +317,9 @@
 
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
+    .imagem__item__lista__caroussel__beneficios{
+        width: 59.65vw;
+    }
     /*-----------------API--------------*/
     .secao__api{
         width: 100vw;
