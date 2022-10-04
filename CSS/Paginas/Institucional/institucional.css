@@ -9,7 +9,7 @@
 @media (min-width:0px){
     .cabecalho__sobre{
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        background-color: transparent;
+        background-color: #202125;
     }
     .link__cabecalho__sobre{
         color: var(--white);
@@ -28,12 +28,13 @@
         justify-content: space-between;
 
         width: 100vw;
-        height: 47.813rem;
+        height: 44.813rem;
         
         background-image: url("../../../Assets/Institucional/Imagens/imagem-banner.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
+        background-position-y: 5rem;
 
         padding-bottom: 4.875rem;
     }

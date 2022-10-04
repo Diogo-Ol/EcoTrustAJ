@@ -7,14 +7,14 @@ const navegacaoDepoimentos = '[data-navegacao-depoimentos]'
 
 new CarouselDepoimentos(anteriorDepoimentos, proximoDepoimentos, listaProdutosDepoimentos,navegacaoDepoimentos)
 
-import { CarouselTempo } from "./carouselLinhaTempo.js"
+import { Carousel } from "./carouselLinhaTempo.js"
 
-const anteriorTempo = '[data-anterior-tempo]'
-const proximoTempo = '[data-proximo-tempo]'
-const listaProdutosTempo = '[data-lista-tempo]'
-const navegacaoTempo = '[data-navegacao-tempo]'
+const indicadores = '[data-carousel-indicadores]'
+const proximo = '[data-proximo]'
+const anterior = '[data-anterior]'
+const produtos = '[data-carousel-produtos]'
 
-new CarouselTempo(anteriorTempo, proximoTempo, listaProdutosTempo,navegacaoTempo)
+new Carousel(indicadores, proximo, anterior, produtos)
 
 import { CarouselNoticias } from "./carouselNoticias.js"
 

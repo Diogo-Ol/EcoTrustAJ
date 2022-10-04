@@ -409,15 +409,16 @@
                         <p class="descricao__secao__banner">A EcoTrust destaca a importância da prevenção em cibersegurança com participação de todas as áreas das empresas.</p>
                     </div>
 
-                    <button class="botao__agenda__demo-white-seta" id="botao__agenda__banner" onclick="abrirModalAgendamento()"> 
+                    <a target="_blank" href="https://wa.me/5511941444777" class="botao__agenda__demo-white-seta" id="botao__agenda__banner" > 
 
-                        Agendar uma demo
+                        Entrar em contato      
+
 
                         <svg id="seta__agenda__banner" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.172 6.99998L6.808 1.63598L8.222 0.221985L16 7.99998L8.222 15.778L6.808 14.364L12.172 8.99998H0V6.99998H12.172Z" fill="black"/>
                         </svg>        
 
-                    </button>
+                    </a>
                 </section>
 
             </section>
@@ -521,14 +522,15 @@
 
                     <h12 class="titulo__cabecalho__tempo">Linha do Tempo</h12>
 
-                    <div class="carousel__indicadores__tempo" data-navegacao-tempo>
-                        <button class="carousel__indicador__tempo carousel__indicador--ativo--tempo" aria-label="Slide 1">2017</button>
+                    <div class="carousel__indicadores__tempo" data-carousel-indicadores>
+                        <button data-indicador="0" class="carousel__indicador__tempo carousel__indicador--ativo--tempo">2017</button>
 
-                        <button class="carousel__indicador__tempo" aria-label="Slide 2">2019</button>
+                        <button data-indicador="1" class="carousel__indicador__tempo">2019</button>
 
-                        <button class="carousel__indicador__tempo" aria-label="Slide 3">2020</button>
+                        <button data-indicador="2" class="carousel__indicador__tempo">2020</button>
 
-                        <button class="carousel__indicador__tempo" aria-label="Slide 4">2022</button>
+                        <button data-indicador="3" class="carousel__indicador__tempo">2022</button>
+
 
                     </div>
 
@@ -538,7 +540,7 @@
                     
                     <section class="container__carousel--tempo">
 
-                        <ul class="lista__tempo" data-lista-tempo>
+                        <ul class="lista__tempo" data-carousel-produtos>
 
                             <li class="item__lista__tempo">
 
@@ -584,7 +586,7 @@
 
                 <section class="container__botoes__carousel__tempo">
 
-                    <button class="botao__carrousel-tempo botao__anterior___caroussel-tempo" data-anterior-tempo>
+                    <button class="botao__carrousel-tempo botao__anterior___caroussel-tempo" data-anterior>
 
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.52268 6.16664L7.99268 1.69664L6.81435 0.518311L0.332683 6.99998L6.81435 13.4816L7.99268 12.3033L3.52268 7.83331H13.666V6.16664H3.52268Z" fill="white"/>
@@ -593,7 +595,7 @@
     
                     </button>
     
-                    <button class="botao__carrousel-tempo botao__proximo___caroussel-tempo" data-proximo-tempo>
+                    <button class="botao__carrousel-tempo botao__proximo___caroussel-tempo" data-proximo>
     
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
@@ -616,7 +618,7 @@
 
                 <section class="secao__cabecalho__depoimentos">
 
-                    <h12 class="titulo__cabecalho__depoimentos">A satisfação de quem usa a EcoTrust</h12>
+                    <h12 class="titulo__cabecalho__depoimentos">Acreditam no nosso propósito</h12>
 
                     <div class="carousel__indicadores" id="carousel__indicadores__depoimentos" data-navegacao-depoimentos>
                         <button class="carousel__indicador carousel__indicador--ativo" aria-label="Slide 1">01</button>
@@ -726,7 +728,7 @@
             <section class="secao__noticias">
 
                 <section class="secao__cabecalho__noticias">
-                    <h16 class="titulo__cabecalho__noticias">EcoTrust na mídia</h16>
+                    <h16 class="titulo__cabecalho__noticias"> <b>Eco IT</b> na mídia</h16>
                 </section>
                 <section class="secao__container__carousel__noticias">
                     
@@ -884,7 +886,7 @@
 
             <section class="secao__banner__footer">
 
-                <h13 class="titulo__banner__footer">Junte-se ao ecossistema brasileiro de segurança cibernética</h13>
+                <h13 class="titulo__banner__footer">Por um ecossistema nacional de segurança cibernética</h13>
 
                 <button class="botao__agenda__demo-white-seta" id="botao__agenda__footer" onclick="abrirModalAgendamento()">
 
@@ -905,7 +907,9 @@
             <address class="address__rodape">
                 <section class="section__redes__rodape">
 
-                    <img src="./Assets/Base/Logo/LogoBranca.svg" alt="Logo EcoTrust" class="logo__section__redes">
+                    <a href="./index.html">
+                        <img src="./Assets/Base/Logo/LogoBranca.svg" alt="Logo EcoTrust" class="logo__section__redes">
+                    </a>
 
                     <section class="secao__lista__redes__rodape">
 
