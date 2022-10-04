@@ -488,6 +488,10 @@
         gap: 0.583rem;
 
         text-decoration: underline;
+
+        border: none;
+
+        background-color: transparent;
     }
     .secao__numeros__plataforma{
         display: flex;
