@@ -306,7 +306,7 @@
 
         background-image: url("../../../Assets/Home/API.svg");
         background-repeat: no-repeat;
-        background-position: right bottom;
+        background-position: right 90%;
         background-size:contain;
     }
     .container__conteudo__api{
