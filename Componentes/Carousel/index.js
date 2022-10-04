@@ -1,11 +1,12 @@
 import { CarouselDepoimentos } from "./carouselDepoimentos.js"
 
-const anteriorDepoimentos = '[data-anterior-depoimentos]'
+const indicadoresDepoimentos = '[data-carousel-indicadores-depoimentos]'
 const proximoDepoimentos = '[data-proximo-depoimentos]'
-const listaProdutosDepoimentos = '[data-lista-depoimentos]'
-const navegacaoDepoimentos = '[data-navegacao-depoimentos]'
+const anteriorDepoimentos = '[data-anterior-depoimentos]'
+const produtosDepoimentos = '[data-lista-depoimentos]'
 
-new CarouselDepoimentos(anteriorDepoimentos, proximoDepoimentos, listaProdutosDepoimentos,navegacaoDepoimentos)
+new CarouselDepoimentos(indicadoresDepoimentos, proximoDepoimentos, anteriorDepoimentos, produtosDepoimentos)
+
 
 import { Carousel } from "./carouselLinhaTempo.js"
 

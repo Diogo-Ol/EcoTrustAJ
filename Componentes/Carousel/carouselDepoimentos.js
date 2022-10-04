@@ -1,30 +1,32 @@
 export class CarouselDepoimentos {
-    constructor(anteriorDepoimentos, proximoDepoimentos, listaProdutosDepoimentos, navegacaoDepoimentos) {
-        this.anteriorDepoimentos = document.querySelector(anteriorDepoimentos)
-        this.proximoDepoimentos = document.querySelector(proximoDepoimentos)
-        this.listaProdutosDepoimentos = document.querySelector(listaProdutosDepoimentos)
-        this.navegacaoDepoimentos = document.querySelector(navegacaoDepoimentos)
+    constructor(indicadoresDepoimentos, proximoDepoimentos, anteriorDepoimentos, produtosDepoimentos) {
+        this.navegacao = document.querySelector(indicadoresDepoimentos)
+        this.listaProdutos = document.querySelector(produtosDepoimentos)
+        this.proximo = document.querySelector(proximoDepoimentos)
+        this.anterior = document.querySelector(anteriorDepoimentos)
 
-        this.indicadoresOpiniao = this.getListaIndicadores()
-
+        this.indicadores = this.getListaIndicadores()
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
+        this.slideAtual = this.getSlideAtual()
 
         this.indiceDoSlideAtual = 0
 
-        this.proximoDepoimentos.addEventListener('click', this.proximoSlide.bind(this))
-
-        this.anteriorDepoimentos.addEventListener('click', this.slideAnterior.bind(this))
+        this.proximo.addEventListener('click', this.proximoSlide.bind(this))
+        this.anterior.addEventListener('click', this.voltaSlide.bind(this))
+        this.navegacao.addEventListener('click', this.pularParaSlide.bind(this))
 
         this.preparaSlides()
     }
 
-    getListaSlides() {
-        return Array.from(this.listaProdutosDepoimentos.children)
-    }
     getListaIndicadores() {
-        return Array.from(this.navegacaoDepoimentos.children)
+        return Array.from(this.navegacao.children)
     }
+
+    getListaSlides() {
+        return Array.from(this.listaProdutos.children)
+    }
+
     getTamanhoSlide() {
         return this.slides[0].getBoundingClientRect().width
     }
@@ -32,47 +34,49 @@ export class CarouselDepoimentos {
     getSlideAtual() {
         return this.slides[this.indiceDoSlideAtual]
     }
-    getIndiceAtual() {
-        return this.indicadoresOpiniao[this.indiceDoSlideAtual]
-    }
 
-    proximoSlide() {
-        let proximaPosicao = this.indiceDoSlideAtual + 1
-        if (proximaPosicao > this.slides.length - 1) {
-            proximaPosicao = 0
-        }
-
-        this.vaParaSlide(proximaPosicao)
-    }
-
-    slideAnterior() {
-        let posicaoAnterior = this.indiceDoSlideAtual - 1
-        if (posicaoAnterior < 0) {
-            posicaoAnterior = this.slides.length - 1
-        }
-
-        this.vaParaSlide(posicaoAnterior)
-    }
-
-    vaParaSlide(posicao) {
-        const indicadorAtual = this.getIndiceAtual()
-        this.indiceDoSlideAtual = posicao
-        const indicadorSelecionado = this.getIndiceAtual()
-
-        this.scrollParaSlide(this.getSlideAtual())
-        this.atualizaIndicadores(indicadorAtual, indicadorSelecionado)
+    getIndicadorAtual() {
+        return this.indicadores[this.indiceDoSlideAtual]
     }
 
     scrollParaSlide(slideSelecionado) {
-        this.listaProdutosDepoimentos.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
-
+        this.listaProdutos.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
     }
 
-    atualizaIndicadores(indicadorAtual, indicadorSelecionado){
+    atualizaIndicadores(indicadorAtual, indicadorSelecionado) {
+        indicadorAtual.classList.remove('carousel__indicador--ativo')
+        indicadorSelecionado.classList.add('carousel__indicador--ativo')
+    }
 
-    indicadorAtual.classList.remove('carousel__indicador--ativo')
+    vaParaSlide(posicao) {
+        const indicadorAtual = this.getIndicadorAtual()
+        this.indiceDoSlideAtual = posicao
+        this.indiceDoSlideAtual = this.indiceDoSlideAtual % this.slides.length
+        const proximoSlide = this.getSlideAtual()
+        const proximoIndicador = this.getIndicadorAtual()
 
-    indicadorSelecionado.classList.add('carousel__indicador--ativo')
+        this.scrollParaSlide(proximoSlide)
+        this.atualizaIndicadores(indicadorAtual, proximoIndicador)
+    }
+
+    proximoSlide() {
+        const proximaPosicao = this.indiceDoSlideAtual + 1
+        this.vaParaSlide(proximaPosicao)
+    }
+
+    voltaSlide() {
+        let posicaoAnterior = this.indiceDoSlideAtual - 1
+        if(posicaoAnterior < 0) {
+            posicaoAnterior = this.tamanhoSlide - 1
+        }
+        this.vaParaSlide(posicaoAnterior)
+    }
+
+    pularParaSlide(evento) {
+        if(evento.target === evento.currentTarget) return
+
+        const targetDot = evento.target.getAttribute('data-indicador-depoimento')
+        this.vaParaSlide(targetDot)
     }
 
     preparaSlides() {
