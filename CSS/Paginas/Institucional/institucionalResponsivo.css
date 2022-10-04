@@ -280,4 +280,25 @@
         font-size: var(--font-18);
         line-height: var(--line-28);
     }
+    .item__lista__tempo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .span__tempo__mobile{
+        display: flex;
+        align-self: center;
+    }
+    .secao__investidores{
+        gap: 6.688rem;
+
+    }
+    .titulo__investidores{
+        font-size: var(--font-24);
+        line-height: var(--line-35);
+    }
+    .lista__investidores{
+        flex-direction: column;
+        gap: 5.688rem;
+    }
 }

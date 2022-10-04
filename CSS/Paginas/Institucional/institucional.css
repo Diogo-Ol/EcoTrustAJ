@@ -292,6 +292,31 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+    /*----------------INVESTIDORES-----------------*/
+    .secao__investidores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9.688rem;
+
+        background-color: #202125;
+
+        padding-bottom: 7.5rem;
+        padding-top: 5.625rem;
+    }
+    .titulo__investidores{
+        font-family: var(--inter);
+        font-size: var(--font-40);
+        font-weight: var(--regular);
+        line-height: var(--line-48);
+        color: var(--white);
+    }
+    .lista__investidores{
+        display: flex;
+        flex-direction: row;
+        gap: 12.563rem;
+        justify-content: center;
+    }
     /*-------------CAROUSEL-INSTITUCIONAL-------------*/
     .secao__depoimentos{
         display: flex;
