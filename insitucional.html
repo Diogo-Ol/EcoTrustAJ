@@ -42,202 +42,16 @@
 
                     </button>
 
-                    <button class="botao__cabecalho__modal__agenda" id="botao__volta__data" onclick="voltaAnimaData()">
-
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.828 6.99992L9.192 1.63592L7.778 0.221924L0 7.99992L7.778 15.7779L9.192 14.3639L3.828 8.99992H16V6.99992H3.828Z" fill="black"/>
-                        </svg>
-                            
-                            
-
-                    </button>
-
-                    <button class="botao__cabecalho__modal__agenda" id="botao__volta__horario" onclick="voltaAnimaHora()">
-
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.828 6.99992L9.192 1.63592L7.778 0.221924L0 7.99992L7.778 15.7779L9.192 14.3639L3.828 8.99992H16V6.99992H3.828Z" fill="black"/>
-                        </svg>
-                            
-                            
-
-                    </button>
-
-                    <button class="botao__cabecalho__modal__agenda" id="botao__fecha__modal__concluido" onclick="voltaAnimaDados()">
-
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3.828 6.99992L9.192 1.63592L7.778 0.221924L0 7.99992L7.778 15.7779L9.192 14.3639L3.828 8.99992H16V6.99992H3.828Z" fill="black"/>
-                        </svg>
-                            
-                            
-
-                    </button>
-
-                    <ul class="lista__progresso__cabecalho__modal">
-
-                        <li class="item__lista__progresso__cabecalho__modal">
-
-                            <span class="barra__item__lista__progresso barra__item__lista__ativo" id="barra__progresso-1"></span>
-
-                        </li>
-
-                        <li class="item__lista__progresso__cabecalho__modal">
-
-                            <span class="barra__item__lista__progresso" id="barra__progresso-2"></span>
-
-                        </li>
-
-                        <li class="item__lista__progresso__cabecalho__modal">
-
-                            <span class="barra__item__lista__progresso" id="barra__progresso-3"></span>
-
-                        </li>
-
-                    </ul>
-
                 </section>
 
-                <section class="secao__conteudo__agenda" id="conteudo__agenda__data">
+                <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/phabrine/agendar-uma-demo?embed=true"></div>
+                
 
-                    <h1 class="titulo__conteudo__agenda">Qual é o melhor dia para conversarmos?</h1>
-
-                    <img class="imagem__agenda__data" src="./Assets/Base/AgendaData.png" alt="Agenda Data">
-
-                    <div class="container__botao">
-                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="animaData()">
-
-                        Escolher horário
-
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
-                            </svg>
-                            
-                            
-
-                        </button>
-                    </div>
-                </section>
-
-                <section class="secao__conteudo__agenda" id="conteudo__agenda__hora">
-
-                    <h1 class="titulo__conteudo__agenda">Qual é o melhor horário do dia 18/08?</h1>
-
-                    <img class="imagem__agenda__data" src="./Assets/Base/AgendaHora.png" alt="Agenda Data">
-
-                    <div class="container__botao">
-                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="animaHora()">
-
-                        Próximo
-
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
-                            </svg>
-                            
-                            
-
-                        </button>
-                    </div>
-                </section>
-
-
-                <section class="secao__conteudo__agenda" id="conteudo__agenda__dados">
-
-                    <h1 class="titulo__conteudo__agenda">Complete o agendamento com alguns dados</h1>
-
-                    <p class="descricao__conteudo__agenda">Precisamos dos dados para confirmar o agendamento e personalizar a demonstração da plataforma.</p>
-
-                    <form action="#" class="formulario__conteudo__agenda" >
-
-                        <div class="container__input__formulario__contato">
-
-                            <label for="Nome" class="label__input__formulario__contato">Nome completo</label>
-                            <input type="text" id="Nome" class="input__formulario__contato__agenda" placeholder="Seu nome e sobrenome">
-    
-                        </div>
-
-                        <div class="container__input__formulario__contato">
-    
-                            <label for="Email" class="label__input__formulario__contato">E-mail</label>
-                            <input type="email" id="Email" class="input__formulario__contato__agenda" placeholder="Seu melhor e-mail">
-    
-                        </div>
-
-                        <div class="container__input__formulario__contato">
-    
-                            <label for="Telefone" class="label__input__formulario__contato">DDD + número</label>
-                            <input type="tel" id="Telefone" class="input__formulario__contato__agenda" placeholder="DDD + número">
-    
-                        </div>
-
-                        <section class="container__input__duplo">
-
-                            <div class="container__input__formulario__contato">
-
-                                <label for="Nome Empresa" class="label__input__formulario__contato">Empresa</label>
-                                <input type="text" id="Nome Empresa" class="input__formulario__contato__agenda-duplo" placeholder="Nome da empresa">
-        
-                            </div>
-
-                            <div class="container__input__formulario__contato">
-    
-                                <label for="Funcionarios" class="label__input__formulario__contato">Quantidade de funcionários</label>
-                                <input type="number" id="Funcionarios" class="input__formulario__contato__agenda-duplo" placeholder="Somente números">
-        
-                            </div>
-
-
-                        </section>
-
-                    </form>
-
-                    <div class="container__botao">
-                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="animaDados()">
-
-                        Agendar demo
-
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.4773 6.16664L6.00732 1.69664L7.18565 0.518311L13.6673 6.99998L7.18565 13.4816L6.00732 12.3033L10.4773 7.83331H0.333984V6.16664H10.4773Z" fill="white"/>
-                            </svg>
-                            
-                            
-
-                        </button>
-                    </div>
-                </section>
-
-                <section class="secao__conteudo__agenda" id="conteudo__agenda__concluido">
-
-
-                    <section class="secao__dados__enviados">
-
-                        <img src="./Assets/Base/AgendaConcluida.svg" alt="Agendamento Concluida" class="imagem__dados__enviados">
-
-                        <h1 class="titulo__dados__enviados">Agendamento realizado</h1>
-
-                        <span class="info__dados__enviados">18/08/2022 - 15H</span>
-
-                        <span class="info__rodape__dados__enviados">Confira seu e-mail para mais detalhes</span>
-
-                    </section>
-
-                    <div class="container__botao">
-                        <button class="botao__agenda__demo-black botao__agenda__demo-black-seta" onclick="animaConcluido()">
-
-                        Fechar
-
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.00072 5.58599L11.9507 0.635986L13.3647 2.04999L8.41472 6.99999L13.3647 11.95L11.9507 13.364L7.00072 8.41399L2.05072 13.364L0.636719 11.95L5.58672 6.99999L0.636719 2.04999L2.05072 0.635986L7.00072 5.58599Z" fill="white"/>
-                        </svg>
-                            
-                            
-                            
-
-                        </button>
-                    </div>
-                </section>
 
             </div>
 
         </section>
+
 
         <section class="secao__modal__menu">
 
@@ -272,7 +86,7 @@
 
                 <li class="item__lista__modal__menu">
 
-                    <a href="./insitucional.html" class="link__lista__modal__menu">Sobre a EcoTrust</a>
+                    <a href="./insitucional.html" class="link__lista__modal__menu">Institucional</a>
 
                 </li>
 
@@ -991,6 +805,7 @@
     <script src="./Componentes/abreMenu.js" type="text/javascript"></script>
     <script src="./Componentes/Institucional/mouseGrabInstitucional.js" type="text/javascript"></script>
     <script src="./Componentes/Institucional/mouseGrabNoticias.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
     </body>
 
 </html>
