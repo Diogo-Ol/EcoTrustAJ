@@ -4,6 +4,8 @@
     }
     .secao__banner{
         height: 40.25rem;
+        background-color: #202125;
+        background-image: none;
     }
     .container__conteudo__banner{
         width: 85.65vw;
