@@ -21,3 +21,7 @@ function openTabsFuncionalidades(event, nomeTab) {
 
 }
 document.getElementById("defaultOpen").click()
+
+function clicaDefault(){
+  document.getElementById("defaultOpen").click()
+}

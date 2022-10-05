@@ -33,7 +33,7 @@
         background-image: url("../../../Assets/Institucional/Imagens/imagem-banner.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100vw 100%;
         background-position-y: 5rem;
 
         padding-bottom: 4.875rem;

@@ -21,3 +21,8 @@ function openTabsConteudoFuncionalidades3(event, nomeTab) {
 
 }
 document.getElementById("defaultOpenConteudo3").click()
+
+
+function clicaDefaultConteudo3(){
+  document.getElementById("defaultOpenConteudo3").click()
+}
