@@ -34,7 +34,7 @@
     .secao__lista__links__cabecalho{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         
     }
     .lista__links__cabecalho{
@@ -69,7 +69,104 @@
         color: var(--black);
         border-bottom: 2px solid var(--black);
     }
-    
+    .container__link__submenu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 3.087rem;
+        overflow: visible;
+
+        cursor: pointer;
+    }
+    .botao__link__submenu{
+        background-color: transparent;
+        border: none;
+
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--medium);
+        line-height: var(--line-17);
+        color: var(--text-gray-60);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+
+        transition: all .15s ease-in-out;
+    }
+    #link__submenu__white{
+        color: white;
+    }
+    .container__link__submenu:hover .botao__link__submenu{
+        color: var(--black);
+
+        transition: all .15s ease-in-out;
+    }
+    .container__link__submenu:hover .svg__down{
+        stroke: black;
+        transition: all .15s ease-in-out;
+    }
+    .container__link__submenu:hover .container__svg__down{
+        transform: rotate(180deg);
+        transition: all .15s ease-in-out;
+    }
+    .container__link__submenu:hover #svg__down__white{
+        stroke: white;
+        transition: all .15s ease-in-out;
+    }
+    .container__svg__down{
+        transition: all .15s ease-in-out;
+    }
+    .svg__down{
+        transition: all .15s ease-in-out;
+    }
+    #submenu__margin{
+        margin-left: 2.563rem;
+    }
+    .lista__submenu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+
+        background-color: #EFEFEF;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-right: 2.875rem;
+        padding-left: 1.5rem;
+
+        border: 1px solid #D7D7D7;
+
+        position: relative;
+        top: .5rem;
+        left: -2.8rem;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: all .25s ease-in-out;
+    }
+    .container__link__submenu:hover .lista__submenu{
+        opacity: 1;
+        visibility: visible;
+        top: 1.5rem;
+        transition: all .25s ease-in-out;
+    }
+    .link__lista__submenu{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--medium);
+        line-height: var(--line-17);
+        color: var(--text-gray-60);
+
+        transition: all .15s ease-in-out;
+    }
+    .link__lista__submenu:hover{
+        color: #000000;
+
+        transition: all .15s ease-in-out;
+    }
 }
 @media (max-width:1024px){
     #botao__mobile{
