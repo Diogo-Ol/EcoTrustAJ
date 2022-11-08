@@ -93,6 +93,26 @@
 
                 </li>
 
+                <li class="item__lista__modal__menu">
+
+                   <button class="botao__submenu__modal accordion__menu">
+
+                        Materiais
+
+                   </button>
+
+                   <ul class="lista__submenu__mobile panel">
+
+                        <a target="_blank" href="https://conteudo.ecoit.com.br/ebooks" class="link__lista__submenu">Ebooks</a>
+
+                        <a target="_blank" href="https://conteudo.ecoit.com.br/webinars" class="link__lista__submenu">Webinars</a>
+
+                        <a target="_blank" href="https://blog.ecoit.com.br/" class="link__lista__submenu">Blog</a>
+
+                </ul>
+
+                </li>
+
 
                 </ul>
 
@@ -124,7 +144,7 @@
 
                 </section>
                 
-                <section class="secao__copyrigth">
+                <section class="secao__copyrigth" id="secao__copyrigth__menu">
 
                     <span class="texto__copyright">
     
@@ -1797,6 +1817,92 @@
                 
             </section>
 
+            <section class="secao__release">
+
+                <h1 class="titulo__release">Últimas atualizações da plataforma</h1>
+
+                <ul class="lista__release">
+
+                    <li class="item__lista__release">
+
+                        <button class="botao__item__lista__release accordion">
+
+                            Tratativa em massa dos ativos externos
+
+                                
+
+                        </button>
+
+                        <section class="secao__item__lista__release  panel">
+
+                            <div class="container__texto__item__lista__release">
+
+                                <span class="data__item__release">8 de agosto de 2022</span>
+
+                                <p class="descricao__item__release">Descrição sobre o lançamento, com destaque para a principal mudança ou evolução. Fechar o parágrafo em até cinco linhas. Maiores detalhes podem ser conferidos à parte.</p>
+
+                            </div>
+
+                            <img src="./Assets/Funcionalidades/Imagens/BGRELEASE.png" class="imagem__item__release">
+
+                        </section>
+
+                    </li>
+
+                    <li class="item__lista__release">
+
+                        <button class="botao__item__lista__release accordion">
+
+                            Atualização
+                                
+
+                        </button>
+
+                        <section class="secao__item__lista__release  panel">
+
+                            <div class="container__texto__item__lista__release">
+
+                                <span class="data__item__release">8 de agosto de 2022</span>
+
+                                <p class="descricao__item__release">Descrição sobre o lançamento, com destaque para a principal mudança ou evolução. Fechar o parágrafo em até cinco linhas. Maiores detalhes podem ser conferidos à parte.</p>
+
+                            </div>
+
+                            <img src="./Assets/Funcionalidades/Imagens/BGRELEASE.png" class="imagem__item__release">
+
+                        </section>
+
+                    </li>
+
+                    <li class="item__lista__release">
+
+                        <button class="botao__item__lista__release accordion">
+
+                            Atualização
+                                
+
+                        </button>
+
+                        <section class="secao__item__lista__release  panel">
+
+                            <div class="container__texto__item__lista__release">
+
+                                <span class="data__item__release">8 de agosto de 2022</span>
+
+                                <p class="descricao__item__release">Descrição sobre o lançamento, com destaque para a principal mudança ou evolução. Fechar o parágrafo em até cinco linhas. Maiores detalhes podem ser conferidos à parte.</p>
+
+                            </div>
+
+                            <img src="./Assets/Funcionalidades/Imagens/BGRELEASE.png" class="imagem__item__release">
+
+                        </section>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
             <section class="secao__praticas">
 
                 <h11 class="titulo__praticas">Baseada nas melhores práticas globais</h11>
@@ -2028,6 +2134,50 @@
     <script src="./Componentes/abreMenu.js" type="text/javascript"></script>
     <script src="./Componentes/Funcionalidades/mouseGrabTabs.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+    <script>
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active__button");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "flex") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "flex";
+        }
+    });
+}
+
+    </script>
+    <script>
+
+        var acc = document.getElementsByClassName("accordion__menu");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active__button__menu");
+    
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "flex") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "flex";
+            }
+        });
+    }
+    
+        </script>
     </body>
 
 </html>

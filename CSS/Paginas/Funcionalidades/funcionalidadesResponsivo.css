@@ -247,4 +247,41 @@
     #botao__agenda__tabs__funcionalidades__mobile{
         display: flex;
     }
+    .lista__release{
+        width: 84vw;
+    }
+    .botao__item__lista__release{
+        width: 84vw;
+        text-align: left;
+    }
+    .titulo__release{
+        width: 84vw;
+        font-size: var(--font-24);
+        line-height: var(--line-33);
+    }
+    .secao__release{    
+        gap: 3.938rem;
+        padding-left: 2rem;
+        padding-top: 3.688rem;
+    }
+    .secao__item__lista__release{
+        width: 84vw;
+
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .container__texto__item__lista__release{
+        width: 84vw;
+    }
+    .imagem__item__release{
+        width: 84vw;
+    }
+    .data__item__release{
+        font-size: var(--font-16);
+        line-height: var(--line-25);
+    }
+    .descricao__item__release{
+        font-size: var(--font-16);
+        line-height: var(--line-25);
+    }
 }

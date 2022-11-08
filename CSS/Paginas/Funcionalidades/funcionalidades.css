@@ -422,4 +422,113 @@
     #botao__agenda__tabs__funcionalidades__mobile{
         display: none;
     }
+    .secao__release{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7.938rem;
+
+        width: 100vw;
+
+        padding-left: 2.813rem;
+        padding-top: 5.688rem;
+        padding-bottom: 8.313rem;
+
+        background-color: #EFEFEF;
+    }
+    .titulo__release{
+        font-family: var(--inter);
+        font-size: var(--font-40);
+        font-weight: var(--regular);
+        line-height: var(--line-48);
+        color: var(--black);
+        width: 27.875rem;
+
+        margin: 0%;
+    }
+    .panel{
+        display: none;
+        overflow: hidden;
+    }
+    .lista__release{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5rem;
+        width: 93.65vw;
+    }
+    .item__lista__release{
+        width: 100%;
+    }
+    .botao__item__lista__release{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 93.65vw;
+
+        font-family: var(--inter);
+        font-size: var(--font-24);
+        font-weight: var(--regular);
+        line-height: 33px;
+        color: var(--black);
+
+        border: none;
+        background-color: transparent;
+        padding-bottom: 2.188rem;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        background-image: url("../../../Assets/Icones/NavDown.svg");
+        background-position: 100%;
+        background-repeat: no-repeat;
+
+        transition: all .1s ease-in-out;
+    }
+    .secao__item__lista__release{
+        display: none;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3.75rem;
+
+        width: 93.65vw;
+
+        padding-top: 3.875rem;
+    }
+    .container__texto__item__lista__release{
+        width: 28vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .data__item__release{
+        font-family: var(--inter);
+        font-size: var(--font-14);
+        font-weight: var(--semi-bold);
+        line-height: 17px;
+        color: var(--black);
+    }
+    .descricao__item__release{
+        margin: 0%;
+        font-family: var(--inter);
+        font-size: var(--font-18);
+        font-weight: var(--regular);
+        line-height: 28px;
+        color: #616161;
+    }
+    .imagem__item__release{
+        width: 65.5vw;
+    }
+    .active__button{
+        font-weight: var(--semi-bold);
+
+        border-bottom: 1px solid black;
+
+        background-image: url("../../../Assets/Icones/NavDownBlack.svg");
+
+        transition: all .1s ease-in-out;
+    }
 }
