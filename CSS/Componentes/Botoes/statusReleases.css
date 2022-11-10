@@ -1,0 +1,26 @@
+@media (min-width:0px){
+    .status__release{
+        font-family: var(--inter);
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+
+        border-radius: 17px;
+
+        color: var(--white);
+
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+    .status__new{
+        background-color: #FF6F29;
+    }
+    .status__fixed{
+        background-color: #27AE60;
+    }
+    .status__changed{
+        background-color: #2F80ED;
+    }
+}
