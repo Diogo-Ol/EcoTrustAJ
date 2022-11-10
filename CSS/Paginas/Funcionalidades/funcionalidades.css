@@ -496,9 +496,10 @@
         width: 93.65vw;
 
         padding-top: 3.875rem;
+        padding-right: 2rem;
     }
     .container__texto__item__lista__release{
-        width: 28vw;
+        width: auto;
 
         display: flex;
         flex-direction: column;
