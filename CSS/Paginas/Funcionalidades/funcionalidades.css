@@ -528,6 +528,7 @@
     }
     .imagem__item__release{
         width: 65.5vw;
+        display: none;
     }
     .active__button{
         font-weight: var(--semi-bold);
